@@ -9,9 +9,5 @@ cd Ass8
 
 ## Run:
 ```
-# Run Part 1
-python3 ass8.py
-
-# Run Part 2
-python3 ass8.py
+python3 roshambo.py
 ```
