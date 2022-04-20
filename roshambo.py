@@ -119,8 +119,10 @@ def main():
 			# Set player value, opponent value, print values, and play
 			player.val = pval
 			opponent.generateRoshambo()
-			print(f'{player.name}: {rps_dict[player.val]}')
-			print(f'{opponent.name}: {rps_dict[opponent.val]}')
+			print(
+				f'{player.name}: {rps_dict[player.val]}\n'
+				f'{opponent.name}: {rps_dict[opponent.val]}'
+			)
 			play(player, opponent, game_count)
 			print()
 
