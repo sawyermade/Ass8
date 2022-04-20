@@ -83,7 +83,7 @@ def main():
 	print('Roshambo Game\n')
 
 	# Get name
-	player_name = input('Enter your name: ')
+	player_name = input('Enter your name: ').strip()
 	print()
 
 	# Hints
@@ -109,17 +109,17 @@ def main():
 	# Loop for playing game and continuing/quitting
 	cont_flag = True
 	while cont_flag:
-		# Get player value
-		pval = input('Rock, paper, or scissors? (r/p/s): ').strip().lower()
+		# Get player rps value
+		val = input('Rock, paper, or scissors? (r/p/s): ').strip().lower()
 		print()
 
 		# Check if rps value is valid and play, else try again
-		if pval in rps_dict:
+		if val in rps_dict:
 			# Since valid, increase game count
 			game_count += 1
 
 			# Set player value, opponent value, print values, and play
-			player.val = pval
+			player.val = val
 			opponent.generateRoshambo()
 			print(
 				f'{player.name}: {rps_dict[player.val]}\n'
