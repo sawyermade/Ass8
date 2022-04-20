@@ -114,7 +114,7 @@ def main():
 		print()
 
 		# Check if rps value is valid and play, else try again
-		if pval in ['r', 'p', 's']:
+		if pval in rps_dict:
 			# Since valid, increase game count
 			game_count += 1
 
