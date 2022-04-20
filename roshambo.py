@@ -65,8 +65,10 @@ def play(player, opponent, game_count):
 		player.l += 1
 		opponent.w += 1
 
-	print(f'{player.name} total wins: {player.w}/{game_count}, total lose: {player.l}/{game_count}')
-	print(f'{opponent.name} total wins: {opponent.w}/{game_count}, total lose: {opponent.l}/{game_count}')
+	print(
+		f'{player.name} total wins: {player.w}/{game_count}, total lose: {player.l}/{game_count}\n'
+		f'{opponent.name} total wins: {opponent.w}/{game_count}, total lose: {opponent.l}/{game_count}'
+	)
 
 # Main function
 def main():
