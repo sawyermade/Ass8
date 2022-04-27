@@ -14,7 +14,7 @@ class Player:
 # Bart, Player child class
 class Bart(Player):
 	def __init__(self):
-		Player.__init__(self, 'Bart')
+		super().__init__('Bart')
 
 	def generateRoshambo(self):
 		self.val = 'r'
@@ -22,7 +22,7 @@ class Bart(Player):
 # Lisa, Player child class
 class Lisa(Player):
 	def __init__(self):
-		Player.__init__(self, 'Lisa')
+		super().__init__('Lisa')
 
 	def generateRoshambo(self):
 		self.val = random.choice(['r', 'p', 's'])
