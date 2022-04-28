@@ -7,9 +7,14 @@ class Player:
 		self.w    = 0
 		self.l    = 0
 		self.val  = ''
+		self.rps_dict = {
+			'r' : 'rock',
+			'p' : 'paper',
+			's' : 'scissors'
+		}
 
 	def __str__(self):
-		return f'{self.name}: {self.val}'
+		return f'{self.name}: {self.rps_dict[self.val]}'
 
 # Bart, Player child class
 class Bart(Player):
@@ -121,10 +126,8 @@ def main():
 			# Set player value, opponent value, print values, and play
 			player.val = val
 			opponent.generateRoshambo()
-			print(
-				f'{player.name}: {rps_dict[player.val]}\n'
-				f'{opponent.name}: {rps_dict[opponent.val]}'
-			)
+			print(player)
+			print(opponent)
 			play(player, opponent, game_count)
 			print()
 
