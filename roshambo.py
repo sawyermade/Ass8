@@ -77,13 +77,6 @@ def play(player, opponent, game_count):
 
 # Main function
 def main():
-	# RPS Dict for printing
-	rps_dict = {
-		'r' : 'rock',
-		'p' : 'paper',
-		's' : 'scissors'
-	}
-
 	# Title
 	print('Roshambo Game\n')
 
@@ -119,7 +112,7 @@ def main():
 		print()
 
 		# Check if rps value is valid and play, else try again
-		if val in rps_dict:
+		if val in ['r', 'p', 's']:
 			# Since valid, increase game count
 			game_count += 1
 
