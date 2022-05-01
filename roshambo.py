@@ -10,7 +10,8 @@ class Player:
 		self.rps_dict = {
 			'r' : 'rock',
 			'p' : 'paper',
-			's' : 'scissors'
+			's' : 'scissors',
+			''  : ''
 		}
 
 	def __str__(self):
