@@ -43,19 +43,16 @@ def play(player, opponent, game_count):
 		draw_flag = True
 
 	# If player has rock and opponent not scissors
-	elif player.val == 'r':
-		if opponent.val != 's':
-			win_flag = False
+	elif player.val == 'r' and opponent.val != 's':
+		win_flag = False
 
 	# If player has paper and opponent not rock
-	elif player.val == 'p':
-		if opponent.val != 'r':
-			win_flag = False
+	elif player.val == 'p' and opponent.val != 'r':
+		win_flag = False
 
 	# If player has scissors and opponent not paper
-	else:
-		if opponent.val != 'p':
-			win_flag = False
+	elif player.val == 's' and opponent.val != 'p':
+		win_flag = False
 
 	# Print summary and update wins/losses
 	if draw_flag:
